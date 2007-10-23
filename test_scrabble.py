@@ -28,6 +28,7 @@ class TestSubanagram(unittest.TestCase):
         self.assertIsSubanagram('of', 'fog')
         self.assertIsNotSubanagram('go', 'foo')
         self.assertIsSubanagram('ofo', 'foo')
+        self.assertIsNotSubanagram('fooo', 'foo')
 
 
 class TestAnagram(unittest.TestCase):

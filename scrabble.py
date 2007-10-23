@@ -21,12 +21,14 @@ def load_dictionary(dictionary):
 
 
 def is_anagram(word1, word2):
+    """Is 'word1' an anagram of 'word2'."""
     if len(word1) != len(word2):
         return False
     return is_subanagram(word1, word2)
 
 
 def is_subanagram(small, large):
+    """Can 'small' be made out of letters from 'large'."""
     duplicates = list(large)
     for character in small:
         if character not in duplicates:
